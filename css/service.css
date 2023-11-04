@@ -1,0 +1,21 @@
+@import url(./default.css);
+
+/********** Service section **********/
+
+.service {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 2rem;
+}
+
+.service__cards {
+  padding: 0.25rem 2rem;
+}
+
+.service__cards > * {
+  padding: 0.4rem 0;
+}
+
+.service__cards__top {
+  justify-content: flex-start !important;
+}

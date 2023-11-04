@@ -1,0 +1,100 @@
+@import url(./default.css);
+
+/********** Hero section **********/
+
+.hero--bg {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--dark-yellow),
+    var(--light-yellow)
+  );
+}
+
+.hero-section {
+  padding: 1rem 0 7rem 0;
+}
+
+.hero__navbar {
+  padding: 1rem;
+}
+
+.hero__navbar__logo {
+  font-family: "Days One", sans-serif;
+  font-size: 1.5rem;
+  color: var(--brown);
+}
+
+.hero__navbar__links a {
+  border: var(--br-1);
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+  margin: 0.5rem;
+  color: var(--brown);
+  transition: background-color 200ms;
+}
+
+.hero__navbar__links a:hover {
+  color: var(--light-yellow);
+  background-color: var(--brown);
+}
+
+.hero > * {
+  border: var(--br-2);
+  /* width: 100%; */
+}
+
+.hero__content {
+  width: 40%;
+}
+
+.hero__images {
+  width: 60%;
+  overflow-x: visible;
+}
+
+.hero__images img {
+  height: 250px;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+}
+
+.hero__images__top,
+.hero__images__bottom {
+  justify-content: flex-end;
+  margin: 1rem 0 1rem 5rem;
+  gap: 1rem !important;
+}
+
+.hero__images__middle {
+  justify-content: flex-start;
+  margin: 1rem 5rem 1rem 0;
+  border: var(--br-1);
+}
+
+.hero__images__middle img {
+  margin-right: -1rem;
+  height: 275px;
+}
+
+.hero__content__heading {
+  line-height: 7rem;
+  padding: 8rem 0 3rem 0;
+  color: var(--brown);
+}
+
+.hero__content__signature {
+  margin: 2rem 0;
+}
+
+.hero__content__book-appointment > a {
+  color: var(--light-yellow);
+  background-color: var(--brown);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  transition: background-color 200ms;
+}
+
+.hero__content__book-appointment > a:hover {
+  color: var(--brown);
+  background-color: var(--light-yellow);
+}

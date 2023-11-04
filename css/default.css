@@ -1,0 +1,118 @@
+/********** Import font **********/
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Days+One&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+/* 
+font-family: 'Calistoga', serif;
+font-family: 'Days One', sans-serif;
+font-family: 'Nunito', sans-serif;
+*/
+
+/********** Set the variables **********/
+:root {
+  --black: #1c1c28;
+  --white: #f2f2f7;
+  --brown: #403121;
+  --dark-yellow: #ffea61;
+  --light-yellow: #ffffb7;
+  --box-shadow: rgba(0, 0, 0, 0.1) 2px 10px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  /* --br-1: 2px solid red;
+  --br-2: 2px solid blue; */
+}
+
+/********** Custom scrollbar **********/
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.3rem;
+  height: 0.3rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--dark-yellow);
+  border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--light-yellow);
+}
+
+/********** Make default properties **********/
+
+html {
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  object-fit: contain;
+}
+
+.container {
+  width: min(100%, 1400px);
+  margin: 0 auto;
+  border: var(--br-1);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.row--vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.--font-hero {
+  font-family: "Calistoga", serif;
+  font-size: 7.5rem;
+}
+.--font-primary {
+  font-family: "Days One", sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: 0.15rem;
+  line-height: 3.5rem;
+}
+.--font-primary--light {
+  color: var(--white);
+  text-shadow: -2px -2px 0 var(--black), 2px -2px 0 var(--black),
+    -2px 2px 0 var(--black), 2px 2px 0 var(--black);
+}
+.--font-secondary {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.--section {
+  padding: 5rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/********** Make it responsive **********/
