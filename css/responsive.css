@@ -1,0 +1,114 @@
+@media (max-width:1366px){
+    .hero{
+        flex-direction: column;
+    }
+
+    .hero>*{
+        width: 80%;
+    }
+
+    .hero__content__heading{
+        line-height: 8rem;
+    }
+
+    .hero__images__top,
+    .hero__images__middle,
+    .hero__images__bottom{
+        justify-content: center;
+        margin: 1rem 0;
+        gap: 1rem !important;
+    }
+
+    .hero__images__middle img {
+        margin-right: 0rem;
+      }
+
+
+      .service-section,.appointment-section{
+        flex-direction: column;
+        /* justify-content: flex-start; */
+      }
+      
+      .appointment__map{
+        margin: 0
+        ;
+      }
+
+      .--font-primary{
+        text-align: center;
+      }
+}
+
+@media (max-width: 600px){
+  .hidden{
+    display: none;
+  }
+
+  .review{
+    padding: 2rem 0;
+  }
+
+  .--font-hero {
+    font-size: 5rem;
+  }
+
+  .--font-primary {
+    font-size: 2.5rem;
+    letter-spacing: 0.15rem;
+    line-height: 3rem;
+  }
+
+  .--font-secondary {
+    font-size: 1rem;
+  }
+
+.hero__navbar{
+  justify-content: center;
+}
+
+.hero__content{
+  justify-content: center;
+  text-align: center;
+}
+
+  .hero__content__heading {
+    line-height: 4.75rem;
+  }
+
+  .hero__images{
+    width: 100%;
+    border: var(--br-1);
+    margin: 0 -3rem;
+  }
+
+  .hero__images img{
+    width: 100%;
+    height: auto;
+  }
+
+  .service{
+    gap: 0.5rem;
+  }
+
+  .service__cards {
+    padding: 0.25rem 0.5rem;
+    text-align: justify;
+  }
+
+  .gallery img{
+    height: 250px;
+  }
+
+  .gallery__top,
+.gallery__bottom {
+  margin-top: 1rem;
+}
+
+.appointment__form{
+  width: 90%;
+}
+
+.footer__external-links a{
+  margin: 1rem 0;
+}
+}

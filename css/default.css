@@ -68,6 +68,7 @@ img {
 .container {
   width: min(100%, 1400px);
   margin: 0 auto;
+  padding: 0 2rem;
   border: var(--br-1);
 }
 
