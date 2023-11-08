@@ -28,12 +28,12 @@
   padding: 0.5rem 2rem;
   margin: 0.5rem;
   color: var(--brown);
-  transition: background-color 200ms;
 }
 
 .hero__navbar__links a:hover {
-  color: var(--light-yellow);
-  background-color: var(--brown);
+  /* color: var(--light-yellow);
+  background-color: var(--brown); */
+  text-decoration: underline;
 }
 
 .hero > * {

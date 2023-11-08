@@ -12,6 +12,10 @@
   overflow-x: scroll;
 }
 
+.review__heading{
+  margin-bottom: 2rem;
+}
+
 .review__cards {
   /* border: var(--br-2); */
   border-radius: 0.5rem;

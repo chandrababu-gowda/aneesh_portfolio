@@ -49,7 +49,7 @@
   }
 
   .--font-hero {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 
   .--font-primary {
@@ -72,7 +72,7 @@
 }
 
   .hero__content__heading {
-    line-height: 4.75rem;
+    line-height: 4.25rem;
   }
 
   .hero__images{
@@ -82,8 +82,14 @@
   }
 
   .hero__images img{
-    width: 100%;
+    width:50%;
     height: auto;
+
+  }
+  .hero__images__middle img {
+    /* height: 200px; */
+    width: 25%;
+
   }
 
   .service{
@@ -92,7 +98,7 @@
 
   .service__cards {
     padding: 0.25rem 0.5rem;
-    text-align: justify;
+    text-align: left;
   }
 
   .gallery img{
@@ -105,7 +111,8 @@
 }
 
 .appointment__form{
-  width: 90%;
+  width: 100%;
+  padding: 1.5rem;
 }
 
 .footer__external-links a{
