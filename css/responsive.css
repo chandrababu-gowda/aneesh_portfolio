@@ -117,6 +117,7 @@
   }
 
   .service {
+    grid-template-columns: repeat(1, auto);
     gap: 0.5rem;
   }
 
