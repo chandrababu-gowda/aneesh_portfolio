@@ -1,4 +1,4 @@
-/********** Import font **********/
+/********** Font **********/
 @import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Days+One&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
 
 /* 
@@ -7,17 +7,18 @@ font-family: 'Days One', sans-serif;
 font-family: 'Nunito', sans-serif;
 */
 
-/********** Set the variables **********/
+/********** Variables **********/
+
 :root {
   --black: #1c1c28;
   --white: #f2f2f7;
   --brown: #403121;
-  --dark-yellow: #ffea61;
-  --light-yellow: #ffffb7;
+  --secondary-color: #ede0d4;
+  --primary-color: #540b0e;
   --box-shadow: rgba(0, 0, 0, 0.1) 2px 10px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-  /* --br-1: 2px solid red;
-  --br-2: 2px solid blue; */
+  /* --br-1: 2px solid red; */
+  /* --br-2: 2px solid blue; */
 }
 
 /********** Custom scrollbar **********/
@@ -35,16 +36,16 @@ font-family: 'Nunito', sans-serif;
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--dark-yellow);
+  background: var(--primary-color);
   border-radius: 1rem;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--light-yellow);
+  background: var(--secondary-color);
 }
 
-/********** Make default properties **********/
+/********** Default-properties **********/
 
 html {
   font-size: 16px;
@@ -62,7 +63,8 @@ html {
 }
 
 img {
-  object-fit: contain;
+  object-position: center;
+  object-fit: cover;
 }
 
 .container {
@@ -96,11 +98,12 @@ img {
   font-size: 3.5rem;
   letter-spacing: 0.15rem;
   line-height: 3.5rem;
+  color: var(--primary-color);
 }
 .--font-primary--light {
   color: var(--white);
-  text-shadow: -2px -2px 0 var(--black), 2px -2px 0 var(--black),
-    -2px 2px 0 var(--black), 2px 2px 0 var(--black);
+  text-shadow: -2px -2px 0 var(--primary-color), 2px -2px 0 var(--primary-color),
+    -2px 2px 0 var(--primary-color), 2px 2px 0 var(--primary-color);
 }
 .--font-secondary {
   font-family: "Nunito", sans-serif;
@@ -116,16 +119,33 @@ a {
   text-decoration: none;
 }
 
-/********** Animation **********/
-
-.hidden--animation{
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateY(-5%);
-  transition: all 750ms;
+/********** Lazy loading images **********/
+.blur-load {
+  height: 250px;
+  border-radius: 0.5rem;
+  background-size: cover;
+  background-position: center;
 }
 
-.show--animation{
+.blur-load.loaded > img {
+  opacity: 1;
+}
+
+.blur-load > img {
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+
+/********** Animation **********/
+
+.hidden--animation {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-10%);
+  transition: all 1000ms;
+}
+
+.show--animation {
   opacity: 1;
   filter: blur(0);
   transform: translateY(0);

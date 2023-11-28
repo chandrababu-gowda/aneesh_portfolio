@@ -1,10 +1,10 @@
 /********** Footer section **********/
 
 .footer-section {
-  background-color: var(--brown);
+  background-color: var(--primary-color);
   text-align: center;
   padding: 2rem;
-  color: var(--light-blue);
+  color: var(--secondary-color);
 }
 
 .footer__social-media,
@@ -12,25 +12,31 @@
   justify-content: center !important;
 }
 
+/***** Footer-social-media *****/
+
 .footer__social-media img {
   width: 3rem;
   height: 3rem;
   margin: 0 0.5rem;
-  background-color: var(--light-yellow);
+  background-color: var(--secondary-color);
   padding: 0.2rem;
   border-radius: 0.5rem;
   /* border: var(--bor2); */
 }
 
+/***** Footer-external-links *****/
+
 .footer__external-links a {
   border: var(--bor-1);
   display: inline-block;
   margin: 1rem 1rem;
-  color: var(--light-yellow);
+  color: var(--secondary-color);
 }
+
+/***** Footer-copyrights *****/
 
 .footer__copyrights {
   text-align: center;
-  color: var(--light-yellow);
+  color: var(--secondary-color);
   /* margin: 0 auto; */
 }

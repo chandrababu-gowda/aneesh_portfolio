@@ -1,16 +1,42 @@
 /********** Hero section **********/
 
 .hero--bg {
-  background-image: linear-gradient(
-    to bottom right,
-    var(--dark-yellow),
-    var(--light-yellow)
+  /* background: linear-gradient(
+    115deg,
+    #b6ebf7 0%,
+    #b6ebf7 40%,
+    #7ce8ff calc(40% + 1px),
+    #7ce8ff 60%,
+    #00d2ff calc(60% + 1px),
+    #00d2ff 72%,
+    #1a8cff calc(72% + 1px),
+    #1a8cff 100%
+  ); */
+  background: linear-gradient(
+    115deg,
+    #fbf7b9 0%,
+    #fbf7b9 40%,
+    #f2dd7e calc(40% + 1px),
+    #f2dd7e 60%,
+    #eed04f calc(60% + 1px),
+    #eed04f 72%,
+    #ebc321 calc(72% + 1px),
+    #ebc321 100%
   );
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
 }
 
 .hero-section {
   padding: 1rem 0 7rem 0;
 }
+
+.hero > * {
+  border: var(--br-2);
+  /* width: 100%; */
+}
+
+/***** Hero-navbar *****/
 
 .hero__navbar {
   padding: 1rem;
@@ -19,7 +45,7 @@
 .hero__navbar__logo {
   font-family: "Days One", sans-serif;
   font-size: 1.5rem;
-  color: var(--brown);
+  color: var(--primary-color);
 }
 
 .hero__navbar__links a {
@@ -27,23 +53,44 @@
   border-radius: 0.5rem;
   padding: 0.5rem 2rem;
   margin: 0.5rem;
-  color: var(--brown);
+  color: var(--primary-color);
 }
 
 .hero__navbar__links a:hover {
-  /* color: var(--light-yellow);
-  background-color: var(--brown); */
   text-decoration: underline;
 }
 
-.hero > * {
-  border: var(--br-2);
-  /* width: 100%; */
-}
+/***** Hero-content *****/
 
 .hero__content {
   width: 40%;
 }
+
+.hero__content__heading {
+  line-height: 7rem;
+  padding: 8rem 0 3rem 0;
+  color: var(--primary-color);
+}
+
+.hero__content__signature {
+  margin: 2rem 0;
+}
+
+.hero__content__book-appointment > a {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  transition: background-color 200ms;
+  box-shadow: var(--box-shadow);
+}
+
+.hero__content__book-appointment > a:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+/***** Hero-images *****/
 
 .hero__images {
   width: 60%;
@@ -51,7 +98,7 @@
 }
 
 .hero__images img {
-  height: 250px;
+  height: 100%;
   border-radius: 0.5rem;
   box-shadow: var(--box-shadow);
 }
@@ -67,32 +114,28 @@
   justify-content: flex-start;
   margin: 1rem 5rem 1rem 0;
   border: var(--br-1);
+  transition-delay: 400ms;
 }
 
 .hero__images__middle img {
   margin-right: -1rem;
-  height: 275px;
+  height: 100%;
 }
 
-.hero__content__heading {
-  line-height: 7rem;
-  padding: 8rem 0 3rem 0;
-  color: var(--brown);
+.hero__images__bottom {
+  transition-delay: 600ms;
 }
 
-.hero__content__signature {
-  margin: 2rem 0;
-}
+/***** Hero-animations *****/
 
-.hero__content__book-appointment > a {
-  color: var(--light-yellow);
-  background-color: var(--brown);
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-  transition: background-color 200ms;
-}
-
-.hero__content__book-appointment > a:hover {
-  color: var(--brown);
-  background-color: var(--light-yellow);
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

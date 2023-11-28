@@ -1,5 +1,7 @@
 /********** Appointment section **********/
 
+/***** Appointment-form *****/
+
 .appointment__form {
   /* border: var(--br-2); */
   padding: 3rem;
@@ -26,15 +28,17 @@
   border-radius: 0.5rem;
   padding: 0.5rem 2.5rem;
   margin: 0.5rem;
-  background-color: var(--brown);
-  color: var(--light-yellow);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   transition: background-color 200ms;
 }
 
 .appointment__form button:hover {
-  background-color: var(--light-yellow);
-  color: var(--brown);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
+
+/***** Appointment-map *****/
 
 .appointment__map {
   /* border: var(--br-2); */
