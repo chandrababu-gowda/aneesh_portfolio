@@ -99,7 +99,7 @@
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(6, auto);
     gap: 0.5rem 0.5rem;
-    grid-template-areas: "a a" "d e" "d g" "b c" "f c" "h h";
+    grid-template-areas: "a a" "g e" "d d" "c c" "f b" "h h";
   }
 
   .review__cards {
