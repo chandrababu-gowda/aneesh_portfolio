@@ -1,50 +1,54 @@
-@media (max-width:1366px){
-    .hero{
-        flex-direction: column;
-    }
+@media (max-width: 1366px) {
+  .hero {
+    flex-direction: column;
+  }
 
-    .hero>*{
-        width: 80%;
-    }
+  .hero > * {
+    width: 80%;
+  }
 
-    .hero__content__heading{
-        line-height: 8rem;
-    }
+  .hero__content__heading {
+    line-height: 8rem;
+  }
 
-    .hero__images__top,
-    .hero__images__middle,
-    .hero__images__bottom{
-        justify-content: center;
-        margin: 1rem 0;
-        gap: 1rem !important;
-    }
+  .hero__images__top,
+  .hero__images__middle,
+  .hero__images__bottom {
+    justify-content: center;
+    margin: 0.5rem 0;
+    gap: 0.5rem !important;
+  }
 
-    .hero__images__middle img {
-        margin-right: 0rem;
-      }
+  .hero__images__middle img {
+    margin-right: 0rem;
+  }
 
+  .service-section,
+  .appointment-section {
+    flex-direction: column;
+    /* justify-content: flex-start; */
+  }
 
-      .service-section,.appointment-section{
-        flex-direction: column;
-        /* justify-content: flex-start; */
-      }
-      
-      .appointment__map{
-        margin: 0
-        ;
-      }
+  .appointment__map {
+    margin: 0;
+  }
 
-      .--font-primary{
-        text-align: center;
-      }
+  .--font-primary {
+    text-align: center;
+  }
 }
 
-@media (max-width: 600px){
-  .hidden{
+@media (max-width: 600px) {
+  .blur-load {
+    width: auto;
+    height: 150px;
+  }
+
+  .hidden {
     display: none;
   }
 
-  .review{
+  .review {
     padding: 2rem 0;
   }
 
@@ -62,37 +66,36 @@
     font-size: 1rem;
   }
 
-.hero__navbar{
-  justify-content: center;
-}
+  .hero__navbar {
+    justify-content: center;
+  }
 
-.hero__content{
-  justify-content: center;
-  text-align: center;
-}
+  .hero__content {
+    justify-content: center;
+    text-align: center;
+  }
 
   .hero__content__heading {
     line-height: 4.25rem;
   }
 
-  .hero__images{
+  .hero__images {
     width: 100%;
     border: var(--br-1);
     margin: 0 -3rem;
   }
 
-  .hero__images img{
-    width:50%;
-    height: auto;
-
+  .hero__images img {
+    width: 100%;
+    object-fit: cover;
+    height: 150px;
   }
   .hero__images__middle img {
     /* height: 200px; */
-    width: 25%;
-
+    width: 100%;
   }
 
-  .service{
+  .service {
     gap: 0.5rem;
   }
 
@@ -101,21 +104,21 @@
     text-align: left;
   }
 
-  .gallery img{
+  .gallery img {
     height: 250px;
   }
 
   .gallery__top,
-.gallery__bottom {
-  margin-top: 1rem;
-}
+  .gallery__bottom {
+    margin-top: 1rem;
+  }
 
-.appointment__form{
-  width: 100%;
-  padding: 1.5rem;
-}
+  .appointment__form {
+    width: 100%;
+    padding: 1.5rem;
+  }
 
-.footer__external-links a{
-  margin: 1rem 0;
-}
+  .footer__external-links a {
+    margin: 1rem 0;
+  }
 }
