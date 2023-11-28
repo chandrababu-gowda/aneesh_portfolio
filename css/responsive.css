@@ -95,6 +95,27 @@
     width: 100%;
   }
 
+  .review {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(6, auto);
+    gap: 0.5rem 0.5rem;
+    grid-template-areas: "a a" "d e" "d g" "b c" "f c" "h h";
+  }
+
+  .review__cards {
+    /* border: var(--br-2); */
+    padding: 1rem;
+  }
+
+  .review__cards__stars {
+    gap: 0.25rem !important;
+  }
+
+  .__star img {
+    width: 1rem;
+    height: 1rem;
+  }
+
   .service {
     gap: 0.5rem;
   }
@@ -102,6 +123,10 @@
   .service__cards {
     padding: 0.25rem 0.5rem;
     text-align: left;
+  }
+
+  .service__cards__top {
+    gap: 0.75rem;
   }
 
   .gallery img {
@@ -120,5 +145,10 @@
 
   .footer__external-links a {
     margin: 1rem 0;
+    font-size: 0.75rem;
+  }
+
+  .footer__copyrights {
+    font-size: 0.75rem;
   }
 }
